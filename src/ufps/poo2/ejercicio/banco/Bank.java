@@ -33,6 +33,15 @@ public class Bank {
 		return 0;
 	}
 	
+	public void cuentaEnSobregiro() {
+		for(int i = 0; i<obAccount.size(); i++) {
+			if(obAccount.get(i).getBalance() < 0) {
+			System.out.println("Esta cuenta esta en sobregiro: " + obAccount.get(i).getAccountNumber());
+			}
+		}
+		
+	}
+	
 	public Account mostrarCuenta(int accnum) {
 		
 		for(int i = 0; i < obAccount.size(); i++) {

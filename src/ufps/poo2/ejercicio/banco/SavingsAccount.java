@@ -6,7 +6,11 @@ public class SavingsAccount extends Account{
 	
 	public SavingsAccount(int a) {
 		super(a);
-		interest = 0.5;
+		setInterest(0.5);
+	}
+	
+	public void setInterest(double inte) {
+		interest = inte;
 	}
 	
 	public void deposit(double sum) {

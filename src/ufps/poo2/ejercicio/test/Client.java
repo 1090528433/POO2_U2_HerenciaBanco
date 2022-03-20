@@ -69,7 +69,7 @@ public static void main(String[] args) {
 		
 		System.out.println("*** Val = "+bank.getBalance(3379844));
 		
-		bank.withdrawAccount(3379844, 20); bank.auxiliar();
+		bank.withdrawAccount(3379844, 200); bank.auxiliar();
 		bank.withdrawAccount(3379844, 5); bank.auxiliar();
 		
 		System.out.println("*** Val = "+bank.getBalance(3379844));
@@ -77,6 +77,9 @@ public static void main(String[] args) {
 		bank.withdrawAccount(3379844, 15); bank.auxiliar();
 		
 		System.out.println("*** Val = "+bank.getBalance(3379844));
+		
+
+		bank.cuentaEnSobregiro();
 		
 //		bank.sendLetterToOverdraftAccounts();
 		

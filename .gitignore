@@ -3,3 +3,6 @@
 build.fxbuild
 *.classpath
 /.settings/
+/.metadata/
+*.class
+
