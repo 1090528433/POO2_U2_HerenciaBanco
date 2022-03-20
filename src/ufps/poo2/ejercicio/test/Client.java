@@ -6,6 +6,13 @@ public class Client {
 
 public static void main(String[] args) {
 		
+//	Bank b = new Bank();
+//	b.deposito(13, 500000);
+//	b.deposito(13, 500000);
+//	b.retirar(13, 250000);
+//	
+//	System.out.println(b.mostrarCuenta(13).toString());
+	
 		// Account acObj = new Account(); // Genera error, ¿por qué?
 		
 		// ================================================
@@ -36,32 +43,41 @@ public static void main(String[] args) {
 		// -------------------------------------------------
 		
 		
-//		Bank bank = new Bank(); 		
-//		
-//		bank.openAccount('A', 3354678);
-//		bank.openAccount('A', 3359302);
-//		bank.openAccount('C', 3379844);
-//		
+		Bank bank = new Bank(); 		
+		
+		bank.openAccount('A', 3354678);
+		bank.openAccount('A', 3359302);
+		bank.openAccount('C', 3379844);
+		
 //		bank.payDividend(3354678, 10);
 //		bank.payDividend(3354678, 30);
-//		
+		
 //		bank.payDividend(3359302, 50);
 //		bank.payDividend(3359302, 50);
 //		
 //		bank.payDividend(3379844, 10);
 //		bank.payDividend(3379844, 10);
-//		
-//		System.out.println("*** Val = "+bank.getBalance(3379844));
-//		
-//		bank.withdrawAccount(3379844, 20);
-//		bank.withdrawAccount(3379844, 5);
-//		
-//		System.out.println("*** Val = "+bank.getBalance(3379844));
-//		
-//		bank.withdrawAccount(3379844, 15);
-//		
-//		System.out.println("*** Val = "+bank.getBalance(3379844));
-//		
+		
+		bank.deposito(3354678, 10); bank.auxiliar();
+		bank.deposito(3354678, 30); bank.auxiliar();
+		
+		bank.deposito(3359302, 50); bank.auxiliar();
+		bank.deposito(3359302, 50); bank.auxiliar();
+		
+		bank.deposito(3379844, 10); bank.auxiliar();
+		bank.deposito(3379844, 100); bank.auxiliar();
+		
+		System.out.println("*** Val = "+bank.getBalance(3379844));
+		
+		bank.withdrawAccount(3379844, 20); bank.auxiliar();
+		bank.withdrawAccount(3379844, 5); bank.auxiliar();
+		
+		System.out.println("*** Val = "+bank.getBalance(3379844));
+		
+		bank.withdrawAccount(3379844, 15); bank.auxiliar();
+		
+		System.out.println("*** Val = "+bank.getBalance(3379844));
+		
 //		bank.sendLetterToOverdraftAccounts();
 		
 	

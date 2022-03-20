@@ -4,7 +4,7 @@ public class Account {
 
 	private double bal; // The current balance
 	private int accnum; // The account number
-
+	
 	public Account(int a) {
 		bal = 0.0;
 		accnum = a;
@@ -18,7 +18,7 @@ public class Account {
 	}
 
 	public void withdraw(double sum) {
-		if (sum > 0)
+        if (sum > 0)
 			bal -= sum;
 		else
 			System.err.println("Account.withdraw(...): " + "cannot withdraw negative amount.");
