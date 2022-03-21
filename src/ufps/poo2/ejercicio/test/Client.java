@@ -1,6 +1,6 @@
 package ufps.poo2.ejercicio.test;
 
-import ufps.poo2.ejercicio.banco.Bank;
+import ufps.poo2.ejercicio.banco.*;
 
 public class Client {
 
@@ -13,7 +13,7 @@ public static void main(String[] args) {
 //	
 //	System.out.println(b.mostrarCuenta(13).toString());
 	
-		// Account acObj = new Account(); // Genera error, ¿por qué?
+		 //Account acObj = new Account(0); // Genera error, ¿por qué?
 		
 		// ================================================
 		// TESTING ACCOUNT CLASS	
@@ -64,23 +64,23 @@ public static void main(String[] args) {
 		bank.deposito(3359302, 50); bank.auxiliar();
 		bank.deposito(3359302, 50); bank.auxiliar();
 		
-		bank.deposito(3379844, 10); bank.auxiliar();
-		bank.deposito(3379844, 100); bank.auxiliar();
+//		bank.deposito(3379844, 10); bank.auxiliar();
+		bank.deposito(3379844, 200); bank.auxiliar();
 		
 		System.out.println("*** Val = "+bank.getBalance(3379844));
 		
-		bank.withdrawAccount(3379844, 200); bank.auxiliar();
-		bank.withdrawAccount(3379844, 5); bank.auxiliar();
-		
-		System.out.println("*** Val = "+bank.getBalance(3379844));
-		
-		bank.withdrawAccount(3379844, 15); bank.auxiliar();
-		
-		System.out.println("*** Val = "+bank.getBalance(3379844));
-		
-
-		bank.cuentaEnSobregiro();
-		
+		bank.withdrawAccount(3379844, 401); bank.auxiliar();
+//		bank.withdrawAccount(3379844, 5); bank.auxiliar();
+//		
+//		System.out.println("*** Val = "+bank.getBalance(3379844));
+//		
+//		bank.withdrawAccount(3379844, 15); bank.auxiliar();
+//		
+//		System.out.println("*** Val = "+bank.getBalance(3379844));
+//		
+//
+//		bank.cuentaEnSobregiro();
+//		
 //		bank.sendLetterToOverdraftAccounts();
 		
 	
